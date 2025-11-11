@@ -29,7 +29,7 @@ public class PaameldingController {
                             @RequestParam String mobil,
                             @RequestParam String kjonn,
                             @RequestParam String passord,
-                            @RequestParam("passord2") String passord2,
+                            @RequestParam("passordRepetert") String passord2,
                             RedirectAttributes ra, HttpSession session) {
         try {
             Deltager d = paameldingService.registrer(fornavn, etternavn, mobil, kjonn, passord, passord2);
